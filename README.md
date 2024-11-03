@@ -126,6 +126,22 @@ npm install
 cd ..
 ```
 
+*Nota*: Actualiza la url de la API en el archivo `src/environments/environment.ts` en la propiedad `apiUrl` con la dirección de la API en tu entorno de producción y `src/environments/environment.development.ts` en el caso de desarrollo.
+
+```typescript
+// environment.ts
+export const environment = {
+  production: true,
+  apiUrl: 'http://localhost:3000', // Actualiza esta URL con la dirección de la API en producción
+};
+
+// environment.development.ts
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:3000', // Actualiza esta URL con la dirección de la API en desarrollo
+};
+```
+
 ### 5. Construye y Ejecuta los Contenedores
 
 Utiliza Docker Compose para construir y ejecutar los contenedores necesarios para la aplicación:
