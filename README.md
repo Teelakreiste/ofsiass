@@ -170,6 +170,8 @@ Para detener los contenedores en ejecución, puedes utilizar:
 docker-compose down
 ```
 
+*Nota*: Para ejecutar la aplicación ya sea en producción o desarrollo no es necesario utilizar Docker, puedes seguir los pasos de instalación y ejecución de cada submódulo por separado, teniendo en cuenta las variables de entorno y configuraciones necesarias y que requieres tener instalado Node.js y MySQL en tu máquina o servidor para el buen funcionamiento de la aplicación.
+
 #### Despliegue en Producción (Ver [Deployment.md](./config/Deployment.md))
 
 ## Uso
