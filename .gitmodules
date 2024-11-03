@@ -1,0 +1,6 @@
+[submodule "api-solicitudes"]
+	path = api-solicitudes
+	url = https://github.com/Teelakreiste/api-solicitudes.git
+[submodule "web-solicitudes"]
+	path = web-solicitudes
+	url = https://github.com/Teelakreiste/web-solicitudes.git
