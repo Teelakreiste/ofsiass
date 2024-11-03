@@ -1,0 +1,61 @@
+version: "3.8"
+
+services:
+  # Servicio de la API en Node.js
+  api:
+    build:
+      context: ./api-solicitudes
+      dockerfile: Dockerfile
+    ports:
+      - "9383:3000" # Mapea el puerto de la API a localhost:3000
+    environment:
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - PORT=${PORT}
+      - SECRET_KEY=${SECRET_KEY}
+      - MAIL_HOST=${MAIL_HOST}
+      - MAIL_PORT=${MAIL_PORT}
+      - MAIL_USER=${MAIL_USER}
+      - MAIL_PASS=${MAIL_PASS}
+      - WEB_URL=${WEB_URL}
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+
+  # Servicio de MySQL para la API
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}  # Contraseña para el usuario root
+      MYSQL_DATABASE: ${MYSQL_DATABASE}  # Base de datos que deseas crear
+      MYSQL_USER: ${MYSQL_USER}  # Usuario no-root que se crea
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}  # Contraseña para el usuario no-root
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "33309:3306" # Mapea el puerto de MySQL a localhost:3306
+    networks:
+      - app-network
+
+  # Servicio de la aplicación Angular
+  web:
+    build:
+      context: ./web-solicitudes
+      dockerfile: Dockerfile
+    ports:
+      - "4201:80" # Mapea el puerto de Nginx a localhost:4200
+    depends_on:
+      - api
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
