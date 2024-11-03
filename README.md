@@ -193,4 +193,4 @@ Después de instalar y ejecutar la aplicación, los usuarios pueden realizar las
 
 ## Licencia
 
-Este proyecto está bajo una licencia que está por definir. Se proporcionará más información sobre la licencia en una fecha posterior.
+Este proyecto está bajo una licencia MIT. Puedes ver más detalles en el archivo [LICENSE](./LICENSE).
