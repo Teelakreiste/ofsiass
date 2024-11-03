@@ -32,6 +32,7 @@ El sistema busca mejorar la eficiencia operativa y la toma de decisiones al prop
 ## Tabla de Contenidos
 
 - [Características](#características)
+- [Prototipo](https://www.figma.com/proto/dcr38GFO85dxZrstO9su60/OFSIASS-DESIGN?node-id=1-2&node-type=canvas&t=5jPjpG0dIIB0MFvA-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Instalación](#instalación)
 - [Uso](#uso)
