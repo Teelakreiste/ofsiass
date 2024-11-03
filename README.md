@@ -1,4 +1,12 @@
-# Proyecto OFSIASS
+#
+
+``` bash
+ ██████  ███████ ███████ ██  █████  ███████ ███████ 
+██    ██ ██      ██      ██ ██   ██ ██      ██      
+██    ██ █████   ███████ ██ ███████ ███████ ███████ 
+██    ██ ██           ██ ██ ██   ██      ██      ██ 
+ ██████  ██      ███████ ██ ██   ██ ███████ ███████ 
+```
 
 Este repositorio contiene la estructura del sistema OFSIASS, diseñado para optimizar el flujo de solicitudes e insumos en Agrícola Sara Palma SAS. Se trata de un **monorepo** que incluye submódulos para dos componentes principales:
 
