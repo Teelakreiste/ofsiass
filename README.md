@@ -170,6 +170,8 @@ Para detener los contenedores en ejecución, puedes utilizar:
 docker-compose down
 ```
 
+#### Despliegue en Producción (Ver [Deployment.md](./config/Deployment.md))
+
 ## Uso
 
 Después de instalar y ejecutar la aplicación, los usuarios pueden realizar las siguientes acciones:
