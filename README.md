@@ -95,7 +95,7 @@ MAIL_USER=example@example.com
 MAIL_PASS=examplepassword
 
 # URL de la aplicación web
-WEB_URL=https://ofsiass.site
+WEB_URL=https://example.com
 
 # Variables de MySQL
 MYSQL_ROOT_PASSWORD=test
